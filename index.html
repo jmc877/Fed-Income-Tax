@@ -1,643 +1,526 @@
-<!DOCTYPE HTML>
-  <html>
-    <head>
-      <title>Federal Income Tax 2026</title>
-      <link href="global.css" type="text/css" rel="stylesheet">
-      <style type="text/css">
-    </style>
-    
-    <style>
-      .reading {
-          display: none;
-      }
-  
-      h3 {
-          cursor: pointer;
-      }
-   
-   
-      #toggle-all {
-            margin-left: 20px;
-            padding: 3px 3px;
-            font-size: 10px; 
-            background-color: #94042c;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        #toggle-all:hover {
-            background-color: #94042c;
-        }
-
-   
-   </style>
-
-  
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Federal Income Tax 2026</title>
+  <!-- Bump ?v= each time global.css changes so browsers load the new copy -->
+  <link rel="stylesheet" href="global.css?v=2">
+</head>
 
 <body>
-
 <div class="content">
- <div class="title">
-   <strong>Federal Income Tax</strong> Fall 2026
-  </div>
+
+  <header class="title">
+    <strong>Federal Income Tax</strong> Fall 2026
+  </header>
   <br>
-  
-  <div class="sidebar">
-        
+
+  <!-- ================================================================
+       SIDEBAR
+       ================================================================ -->
+  <aside class="sidebar">
     <div>
       <hr>
       <h1>Professor</h1>
-      <small>Jeffrey Colon</a>
-        <br>
-      OH: By appointment anytime.
-      Room 8-103
-      jcolon@fordham.edu
+      <small>
+        Jeffrey Colon<br>
+        OH: By appointment anytime.<br>
+        Room 8-103<br>
+        <a href="mailto:jcolon@fordham.edu">jcolon@fordham.edu</a>
       </small>
-        <br>
-        <hr>
-      <h1>Last Update: 
-        <br>21 Nov 2026</h1>  
-        <small>
-        
-        [11/21]: Corrected text page numbers for reading assignments for Chs 15, 17 & 14; added a few materials on ETFs and tax shelters
-        </small>
-          
-        <hr>      
-      <h1>Assignments</h1>
-        <small>
-              
-          
-          [11/23]: [2] Finish H&C problems; Tax Shelter
-            <br>
-          [11/25]: Thanksgiving Holiday 
-            <br>
-          [12/3]: [1] Last class: Retirement.  Adeus
-        </small>                  
-
-        
       <hr>
-      
+
+      <!-- Update the date and the note each time the page changes -->
+      <h1>Last Update:<br>21 Nov 2026</h1>
+      <small>
+        [11/21]: Corrected text page numbers for reading assignments for Chs 15, 17 &amp; 14; added a few materials on ETFs and tax shelters
+      </small>
+      <hr>
+
+      <!-- One line per class date: [MM/DD]: description<br> -->
+      <h1>Assignments</h1>
+      <small>
+        [11/23]: [2] Finish H&amp;C problems; Tax Shelter<br>
+        [11/25]: Thanksgiving Holiday<br>
+        [12/3]: [1] Last class: Retirement. Adeus
+      </small>
+      <hr>
     </div>
- 
+
     <div data-spy="affix" data-offset-top="500" class="navbar affix-top">
       <div class="affix-child">
-        <b> Something Extra</b>
+        <b>Something Extra</b>
       </div>
       <ul class="menu nav">
-        <li class="active">
-          <a href="overview.html"> <strong>Overview and Learning Goals</strong></a>
-        </li>
-        <li>
-          <a href="extraresources.html"><strong>Supplemental Materials</strong></a>
-        </li>
-        <li>
-          <a href="zoomlinks.html"><strong>Zoom link</strong></a>
-        </li>
-        
-        <li>
-          <a href="finalexam.html"><strong>Final Exam</strong></a>
-        </li>
-
-        <li>
-          <a href="updatehistory.html"><strong>Update History</strong></a>
-        </li>
-
+        <li><a href="overview.html"><strong>Overview and Learning Goals</strong></a></li>
+        <li><a href="extraresources.html"><strong>Supplemental Materials</strong></a></li>
+        <li><a href="zoomlinks.html"><strong>Zoom link</strong></a></li>
+        <li><a href="finalexam.html"><strong>Final Exam</strong></a></li>
+        <li><a href="updatehistory.html"><strong>Update History</strong></a></li>
       </ul>
     </div>
+  </aside>
 
+  <button id="toggle-all" type="button">Expand All</button>
 
-  </div>
-   
-  <button id="toggle-all">Expand All</button>
+  <!-- ================================================================
+       READING LIST
+       Each section is an <h3> immediately followed by <ul class="reading">.
+       Nested lists must sit INSIDE an <li>, before its closing </li>.
+       Slides links go in <small class="pull-right"> inside the first <li>.
+       Typical section:
+         <li><small>FIT:</small> Ch. N ... [Slides]</li>
+         <li><small>CODE &amp; REGS:</small> sections</li>
+         <li><small>ADDITIONAL READINGS:</small> <ul><li>...</li></ul></li>
+       ================================================================ -->
+  <main class="article">
 
-  <div class="article">
-
+    <!-- ===== Required Texts and Materials ===== -->
     <h3>Required Texts and Materials</h3>
     <ul class="reading">
-      <li> Geier & Ricks, <em><a href="Geier-Ricks-Tax-11thEd-2025.pdf">U.S. Federal Income Taxation of Individuals</em> (2025)</a> (FIT).  The book is free!  Students may find useful to print it out and perhaps have it spiral bound.
-          <ul>
-            <li>Here's a <a href="https://docs.google.com/spreadsheets/d/1Tv4eVayvP6H67fetEHwWqNyU2NQYkloZyrz1DYq6rKU/edit?usp=sharing">spreadsheet </a>to note any errata.</li>
-          </ul>  
-
-      
-      <li>The Code and Regs we'll be using this semester are here:  <a href="FIT CodeRegs 6Jan26.pdf">2026 FIT Code and Regs </a>, which is current through June 2026.  I recommend that you print it out (it's around 220 pages) and perhaps spiral bind it and keep it next to you to mark up during class and while doing the problems and readings.  You are welcome to use a commercial printed version, such as Foundation Press or CCH, which I prefer.  If you opt for a printed version, make sure that it reflects the OBBBA changes in 2025. </li> 
-      
-      <li>The Code and Regs are available on line at <a href="https://www.taxnotes.com/research">Tax Materials</a>. This is a fantastic free database of fundamental tax materials. On the Supplemental Materials, I show how to make a bookmark that will take you directly to the appropriate code or regulation section. All relevant tax materials are also available on BLaw, WL, Lexis, or Vital Law.</li>
-     
-      <li>Here is the <a href="FITCodeAndRegSections.xlsx">spreadsheet </a>listing the Code and Regs sections that was used to generate the class Code & Regs and the webpage of <a href="https://www.lawskypracticeproblems.org/codeandregs">Sarah Lawsky (Code & Regs) </a>where you can create you own.  Note, if the pdf exceeds 450 pages, the software will not generate footers with the applicable section numbers, which can make it difficult to figure where you are.</li>
-      
-      <li>For each topic, first read <em>FIT</em> and then any additional readings and problems.  Use the slides to focus on the important materials that we'll cover during the lectures.  Unless otherwise specified, you should do all of the problems in FIT, which I'll supplement with additional problems throughout the semester.</li> 
-
-      <li>An interesting podcast on the use of AI by a large, NY law firm (Lowenstein): <a href="https://podcasts.apple.com/us/podcast/why-ai-might-actually-create-more-work-for-lawyers/id1056200096?i=1000776561632">AI and Lawyers</a> (July 2026)</li></li>
-
-     
-     
-    </ul>
- 
-    <h3>Additional Materials</h3>
-
-    <ul class="reading">  
-     Below are additional readings and materials to which we'll refer throughout the semester.  This list may be updated during the semester, if necessary.
-       <br>
+      <li>
+        Geier &amp; Ricks, <a href="Geier-Ricks-Tax-11thEd-2025.pdf"><em>U.S. Federal Income Taxation of Individuals</em> (2025)</a> (FIT). The book is free! Students may find useful to print it out and perhaps have it spiral bound.
         <ul>
-          <li>  <a href="https://taxlawcenter.org/the-federal-tax-system-explained"> Fed. Tax System Explained (NYU)</a></li>
+          <li>Here's a <a href="https://docs.google.com/spreadsheets/d/1Tv4eVayvP6H67fetEHwWqNyU2NQYkloZyrz1DYq6rKU/edit?usp=sharing">spreadsheet</a> to note any errata.</li>
+        </ul>
+      </li>
+      <li>
+        The Code and Regs we'll be using this semester are here: <a href="FIT CodeRegs 6Jan26.pdf">2026 FIT Code and Regs</a>, which is current through June 2026. I recommend that you print it out (it's around 220 pages) and perhaps spiral bind it and keep it next to you to mark up during class and while doing the problems and readings. You are welcome to use a commercial printed version, such as Foundation Press or CCH, which I prefer. If you opt for a printed version, make sure that it reflects the OBBBA changes in 2025.
+      </li>
+      <li>
+        The Code and Regs are available on line at <a href="https://www.taxnotes.com/research">Tax Materials</a>. This is a fantastic free database of fundamental tax materials. On the Supplemental Materials, I show how to make a bookmark that will take you directly to the appropriate code or regulation section. All relevant tax materials are also available on BLaw, WL, Lexis, or Vital Law.
+      </li>
+      <li>
+        Here is the <a href="FITCodeAndRegSections.xlsx">spreadsheet</a> listing the Code and Regs sections that was used to generate the class Code &amp; Regs and the webpage of <a href="https://www.lawskypracticeproblems.org/codeandregs">Sarah Lawsky (Code &amp; Regs)</a> where you can create you own. Note, if the pdf exceeds 450 pages, the software will not generate footers with the applicable section numbers, which can make it difficult to figure where you are.
+      </li>
+      <li>
+        For each topic, first read <em>FIT</em> and then any additional readings and problems. Use the slides to focus on the important materials that we'll cover during the lectures. Unless otherwise specified, you should do all of the problems in FIT, which I'll supplement with additional problems throughout the semester.
+      </li>
+      <li>
+        An interesting podcast on the use of AI by a large, NY law firm (Lowenstein): <a href="https://podcasts.apple.com/us/podcast/why-ai-might-actually-create-more-work-for-lawyers/id1056200096?i=1000776561632">AI and Lawyers</a> (July 2026)
+      </li>
+    </ul>
+
+    <!-- ===== Additional Materials ===== -->
+    <h3>Additional Materials</h3>
+    <ul class="reading">
+      <li>
+        Below are additional readings and materials to which we'll refer throughout the semester. This list may be updated during the semester, if necessary.
+        <ul>
+          <li><a href="https://taxlawcenter.org/the-federal-tax-system-explained">Fed. Tax System Explained (NYU)</a></li>
           <li><a href="https://www.irs.gov/newsroom/understanding-irs-guidance-a-brief-primer">Primer on IRS Guidance</a></li>
           <li><a href="https://taxlawcenter.org/tealbook/policy-options">Options to Broaden the Tax Base (NYU)</a></li>
           <li><a href="https://taxfoundation.org/tax-reform-guide/">Option to Reform America's Tax Code (Tax Foundation)</a></li>
           <li><a href="https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill">Inflation adjustments for 2026 (abridged list)</a>; <a href="https://www.irs.gov/pub/irs-drop/rp-25-32.pdf">Rev. Proc. 2025-32 (unabridged list)</a></li>
-          <li><a href="2025 1040.pdf"> Form 1040 (2025)</a></li>
-          <li><a href="2025 Schedule 1-A.pdf">Form 1040 Schedule 1</a> (additional income and adjustments) </li>
+          <li><a href="2025 1040.pdf">Form 1040 (2025)</a></li>
+          <li><a href="2025 Schedule 1-A.pdf">Form 1040 Schedule 1</a> (additional income and adjustments)</li>
           <li><a href="2025 Schedule 2.pdf">Form 1040 Schedule 2</a> (additional taxes)</li>
           <li><a href="2025 Schedule 3.pdf">Form 1040 Schedule 3</a> (additional credits and payments)</li>
           <li><a href="https://www.irs.gov/forms-pubs/schedules-for-form-1040">Additional 1040 Schedules</a> (A, B, C, etc.)</li>
-          <li><a href="Britney Spears TC Edited.pdf">Tax me baby one more time</a>. Britney Spear's 2025 Tax Court petition. </li>
-          <!-- <li><a href="Ways and Means Tax Proposals 18Jan25">Ways and Means Revenue Estimates for Tax Proposals (Jan 2025)</a></li> -->
+          <li><a href="Britney Spears TC Edited.pdf">Tax me baby one more time</a>. Britney Spear's 2025 Tax Court petition.</li>
+          <!-- Retired item:
+          <li><a href="Ways and Means Tax Proposals 18Jan25">Ways and Means Revenue Estimates for Tax Proposals (Jan 2025)</a></li>
+          -->
         </ul>
-    
-    
-     <!-- table id="homeworks"> 
-         <tr>
-            <td> Homework </th>
-            <td> Due Date</th>
-            <td colspan="3">Solutions</th>
-            </tr>
-          <tr>
-            <td><a href="https://www.irs.gov/newsroom/understanding-irs-guidance-a-brief-primer">Primer on IRS Guidance</a></td>
-            <td><a href="https://www.irs.gov/pub/irs-pdf/f1040.pdf"> Form 1040 (2023)</a></td>
-            <td><a href="https://www.irs.gov/pub/irs-pdf/f1040s1.pdf">Form 1040 Schedule 1 </a> </td>
-            
-          </tr>
-      </table>    -->     
-    </ul> 
-    
-
-   <h3>Introduction</h3>
-
-    <ul class="reading">  
-      <li>
-          <small>FIT:</small> Introduction (skim lightly),
-          
-          <small class="pull-right">
-            <a href="slides/FIT_Intro_2026F.pptx" class="link link-slides">Slides</a>  
-          </small>
-          
-          but substitute this brief description of <a href="Loper Excerpt.pdf">Loper Bright v. Raimondo (S. Ct. 2024)</a> for the discussion of <em> Chevron</em> on pp. xxv-xxvi.  For the truly ambitious, here's the unabridged case: <a href="https://www.taxnotes.com/tax-notes-today-federal/litigation-and-appeals/supreme-court-overrules-chevron/2024/07/01/7kdy7">Loper Bright Enterprises Inc. v. Raimondo</a>, 144 S. Ct. 2244 (2024).  This case potentially promises a lifetime of future tax litigation.
-      </li> 
-
-      <li>Skim very lightly Britney's Tax Court petition under Additional Materials</li>
-       
-      <li>
-        <small>CODE & REGS</small>:
-        7805(a), (b), and (e); 1502; 7701(a)(1) and (3); 301.7701-3(a) and (b)(1)(ii) (all skim only)
-      </li> 
-
       </li>
-    </ul> 
+      <!-- Homework table template (not in use):
+      <table id="homeworks">
+        <tr><th>Homework</th><th>Due Date</th><th colspan="3">Solutions</th></tr>
+        <tr>
+          <td><a href="https://www.irs.gov/newsroom/understanding-irs-guidance-a-brief-primer">Primer on IRS Guidance</a></td>
+          <td><a href="https://www.irs.gov/pub/irs-pdf/f1040.pdf">Form 1040 (2023)</a></td>
+          <td><a href="https://www.irs.gov/pub/irs-pdf/f1040s1.pdf">Form 1040 Schedule 1</a></td>
+        </tr>
+      </table>
+      -->
+    </ul>
 
-   <h3>Essential Structure of the Income Tax</h3>
-       <ul class="reading">  
-          <li>
-            <small>FIT</small>: Ch. 1, but pp. 32-43 skim only
-            <small class="pull-right">
-              <a href="slides/FIT_StructureIncomeTax_2026F.pptx" class="link link-slides">Slides</a>  
-            </small>  
-          
-            <ul>
-              <li>Because this chapter presents an overview of many of the topics that we'll cover this semester, it can be a bit of a slog.  But don't despair, as we have the entire course to fill in the details.  I recommend coming back and reviewing this chapter, especially Part A, throughout the semester. </li>
-
-              <li>We cover problems on pp. 24-25 after slide 13.</li>
-
-              <li>For the rate tables on p. 31 and problem 1 on p. 43, substitute the inflation adjusted rates in Rev. Proc. 2025-32 under additional materials (or the slides).  For prob. 2 on p. 44, read &sect;170(b)(1)(G)(iii)(I) and &sect;170(p).  </li>
-
-  
-
-            </ul>
-                
-              <li>
-                <small>CODE & REGS</small>: 1(a) and (c); 61(a)(1)-(14); 61(a); 61(a)(1), (2), (3), (4), and 17; 63(a), (b) (c)(7), (d), (3); 67(a), (b), and (g); 161; 165(a) and (c); 167(a); 262(a); 263(a)(1) and (2); 1001(a) and (b); 1011(a); 1012(a); 1211(b); 1221 and 1222. All are skim lightly but should be referred to when doing the problems.  We'll revisit these provisions later in the semester.
-              </li>
-
-           
-          
-          <li>
-            <small>ADDITIONAL READINGS & MATERIALS</small>
-              <ul>
-                <li>Skim Form 1040 and Schedules 1-3 </li>
-              </ul>
-          </li>
-          
-        </ul>
-
-      <h3>Consumption Taxation</h3>
-
-            <ul class="reading">  
-            <li>
-                <small>FIT:</small> Ch. 2
-                    <small class="pull-right">
-                    <a href="slides/FIT_ConsumptionTaxes_2026F.pptx" class="link link-slides">Slides</a>  
-                </small>
-              
-              <li>
-                <small>CODE & REGS:</small> 103; 163(a), (d)(1) and (k); 179(a); 121(a), (b)(1) and (2); 219(a); 265(a)(2); 408A(c)(1); 530A; 1014(a)(1).  All are skim very lightly as we'll come back to them later in the semester.
-              </li>
-          </ul> 
-
-         
-        
-      
-    <h3>Ethical Debates, Economic Theories, and Real-World Impacts</h3>
-
-      <ul class="reading">  
-          <li>
-              <small>FIT:</small> Ch. 3: Focus on pp. 62-65; pp. 69-70 (overview of progression of tax rates over time; skim lightly); pp. 72-81 (skim the charts, some of which are updated in the slides); 82-85 (to Fairness & Wage Tax); 89; and 99-103 (tax expenditures).
-                  <small class="pull-right">
-                  <a href="slides/FIT_EthDebate_2026F.pptx" class="link link-slides">Slides</a>  
-              </small>
-       
-
-            <ul>
-              <li>This chapter covers a lot of tax policy issues, many of which are subject to fierce debates.  We won't have time to cover all of the topics in great detail.  If these topics interest you, I recommend taking the Tax Policy class, which is offered each year.</li>
-            </ul>
-  
-          <li> <small>CODE & REGS</small>
-            
-          <li><small>ADDITIONAL READINGS</small>: 
-            <ul>
-              <li>Some of issues relating to the distribution of wealth and tax liabilities, including issues on how to measure income and taxes, are covered very clearly in this recent JCT report, <a href="JCT_47_24 High Income Taxpayers.pdf">Present Law and Background on the Income Taxation of High Income and High Wealth Taxpayers</a>, JCX-47-24 (Sept. 10, 2024).  Please just skim the tables.  
-              <li> <a href="US Taxes Too High Or Too Low Choose Your Chart.pdf">Are Americans Overtaxed? (BB Jan 2025)</a>
-            </ul>
-          
-           
-      </ul> 
-
-
-    <h3>Capital Expenditures
-      </h3>
-
-      <ul class="reading">  
-       <li>
-          <small>FIT:</small> Ch. 4
-              <small class="pull-right">
-              <a href="slides/FIT_CapExpend_2026S.pptx" class="link link-slides">Slides</a>  
-          </small>
-       
-       <li><small>CODE & REGS:</small> 162(a); 212; 263(a)(1); 263A(a) and (b); 1.263(a)-1(a), (d), and (f); 1.263(a)-2(d)(1), (e)(1), (f)(1) and (2)(iii); 1.263(a)-3(d), (h)(1), (i)(1), (j)(1), (k)(1), and (l)(1); 1.263(a)-4(b)(1) and (3), (c), (d)(2), (d)(3), (d)(4), (e)(4)(iii), (f)(1) and (8); 1.263-5(a)(1)-(10).  The list is a bit long, but you only need to skim the listed regs.
-
-        <li>Here is a pdf of the <a href="263 Regulations.pdf">263 Regulations </a>in all of their glory.  The software used to generate the Code & Regs doesn't permit choosing subparagraphs of the regulations, and given their length, it can't generate a footer with the page numbers and section numbers.  You may wish to separate the particular provisions we cover in class and manually insert them in your Code & Regs.</li>
-       
-       <li><small>ADDITIONAL READINGS</small>
-          <ul>
-            <li><a href="https://www.taxnotes.com/research/federal/irs-guidance/revenue-rulings/indopco-decision-doesnt-affect-deductibility-of-advertising-costs/dgn2?highlight=92-80">Rev. Rul. 92-80</a></li>
-            <li><a href="https://www.taxnotes.com/research/federal/irs-guidance/revenue-rulings/indopco-does-not-affect-training-costs/dgxk?highlight=96-62">Rev. Rul. 96-62</a></li>
-          </ul>
-      
-      
-      </ul>
-
-
-    <h3>Compensation</h3>
-
-    <ul class="reading">  
-     <li>
-        <small>FIT:</small> Ch. 5
-            <small class="pull-right">
-            <a href="slides/FIT_Compensation_2026S.pptx" class="link link-slides">Slides</a>  
-        </small>
-      
-      <li>   
-        <small>CODE & REGS</small>: 61(a)(1); 83(a), (b), (c), and (h); 102(c); 119(a) and (b); 132(a)-(f), h(2)(A) and h(3), and j(1); 224; 225; 1.61-2(a)(1), (d); 1.83-7(a); all of the 132 regulations cited in the problems on pp. 140-142; 
-       
+    <!-- ===== Introduction ===== -->
+    <h3>Introduction</h3>
+    <ul class="reading">
       <li>
-        <small>ADDITIONAL READINGS</small>: 
-          <ul> 
-            <li><a href="https://www.taxnotes.com/research/federal/irs-guidance/notices/guidance-provided-tip-overtime-income-deductions-2025/7t9d6">Rev. Proc. 2025-69 </a>, which provides guidance on determining and reporting tips and overtimes under &sect&sect224 and 225.  Skim lightly only as it could be useful to assist any friends or family receiving tips or overtime.
+        <small>FIT:</small> Introduction (skim lightly),
+        <small class="pull-right"><a href="slides/FIT_Intro_2026F.pptx" class="link link-slides">Slides</a></small>
+        but substitute this brief description of <a href="Loper Excerpt.pdf">Loper Bright v. Raimondo (S. Ct. 2024)</a> for the discussion of <em>Chevron</em> on pp. xxv-xxvi. For the truly ambitious, here's the unabridged case: <a href="https://www.taxnotes.com/tax-notes-today-federal/litigation-and-appeals/supreme-court-overrules-chevron/2024/07/01/7kdy7">Loper Bright Enterprises Inc. v. Raimondo</a>, 144 S. Ct. 2244 (2024). This case potentially promises a lifetime of future tax litigation.
+      </li>
+      <li>Skim very lightly Britney's Tax Court petition under Additional Materials</li>
+      <li>
+        <small>CODE &amp; REGS:</small> 7805(a), (b), and (e); 1502; 7701(a)(1) and (3); 301.7701-3(a) and (b)(1)(ii) (all skim only)
+      </li>
+    </ul>
 
-          </ul>
-    </ul> 
+    <!-- ===== Ch. 1: Essential Structure ===== -->
+    <h3>Essential Structure of the Income Tax</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 1, but pp. 32-43 skim only
+        <small class="pull-right"><a href="slides/FIT_StructureIncomeTax_2026F.pptx" class="link link-slides">Slides</a></small>
+        <ul>
+          <li>Because this chapter presents an overview of many of the topics that we'll cover this semester, it can be a bit of a slog. But don't despair, as we have the entire course to fill in the details. I recommend coming back and reviewing this chapter, especially Part A, throughout the semester.</li>
+          <li>We cover problems on pp. 24-25 after slide 13.</li>
+          <li>For the rate tables on p. 31 and problem 1 on p. 43, substitute the inflation adjusted rates in Rev. Proc. 2025-32 under additional materials (or the slides). For prob. 2 on p. 44, read &sect;170(b)(1)(G)(iii)(I) and &sect;170(p).</li>
+        </ul>
+      </li>
+      <li>
+        <small>CODE &amp; REGS:</small> 1(a) and (c); 61(a)(1)-(14); 61(a); 61(a)(1), (2), (3), (4), and 17; 63(a), (b) (c)(7), (d), (3); 67(a), (b), and (g); 161; 165(a) and (c); 167(a); 262(a); 263(a)(1) and (2); 1001(a) and (b); 1011(a); 1012(a); 1211(b); 1221 and 1222. All are skim lightly but should be referred to when doing the problems. We'll revisit these provisions later in the semester.
+      </li>
+      <li>
+        <small>ADDITIONAL READINGS &amp; MATERIALS:</small>
+        <ul>
+          <li>Skim Form 1040 and Schedules 1-3</li>
+        </ul>
+      </li>
+    </ul>
 
-   <h3>Residual Income</h3>
+    <!-- ===== Ch. 2: Consumption Taxation ===== -->
+    <h3>Consumption Taxation</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 2
+        <small class="pull-right"><a href="slides/FIT_ConsumptionTaxes_2026F.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li>
+        <small>CODE &amp; REGS:</small> 103; 163(a), (d)(1) and (k); 179(a); 121(a), (b)(1) and (2); 219(a); 265(a)(2); 408A(c)(1); 530A; 1014(a)(1). All are skim very lightly as we'll come back to them later in the semester.
+      </li>
+    </ul>
 
-    <ul class="reading">  
-     <li>
-        <small>FIT:</small> Ch. 6
-            <small class="pull-right">
-            <a href="slides/FIT_Residual_Income_2026F.pptx" class="link link-slides">Slides</a>  
-        </small>
-      
-      <li>   
-        <small>CODE & REGS:</small> 61; 109; 1019
-       
+    <!-- ===== Ch. 3: Ethical Debates ===== -->
+    <h3>Ethical Debates, Economic Theories, and Real-World Impacts</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 3: Focus on pp. 62-65; pp. 69-70 (overview of progression of tax rates over time; skim lightly); pp. 72-81 (skim the charts, some of which are updated in the slides); 82-85 (to Fairness &amp; Wage Tax); 89; and 99-103 (tax expenditures).
+        <small class="pull-right"><a href="slides/FIT_EthDebate_2026F.pptx" class="link link-slides">Slides</a></small>
+        <ul>
+          <li>This chapter covers a lot of tax policy issues, many of which are subject to fierce debates. We won't have time to cover all of the topics in great detail. If these topics interest you, I recommend taking the Tax Policy class, which is offered each year.</li>
+        </ul>
+      </li>
+      <!-- <li><small>CODE &amp; REGS:</small> </li> -->
       <li>
         <small>ADDITIONAL READINGS:</small>
         <ul>
-          <li><a href="https://www.prnewswire.com/news-releases/distinctive-assets-once-again-celebrates-hollywoods-biggest-night-with-its-legendary-everyone-wins-nominee-gift-bags-302700642.html">Oscar freebie bag items</a>For 2026, the Oscar freebie bag is worth 360k</li>
+          <li>Some of issues relating to the distribution of wealth and tax liabilities, including issues on how to measure income and taxes, are covered very clearly in this recent JCT report, <a href="JCT_47_24 High Income Taxpayers.pdf">Present Law and Background on the Income Taxation of High Income and High Wealth Taxpayers</a>, JCX-47-24 (Sept. 10, 2024). Please just skim the tables.</li>
+          <li><a href="US Taxes Too High Or Too Low Choose Your Chart.pdf">Are Americans Overtaxed? (BB Jan 2025)</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- ===== Ch. 4: Capital Expenditures ===== -->
+    <h3>Capital Expenditures</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 4
+        <small class="pull-right"><a href="slides/FIT_CapExpend_2026S.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li>
+        <small>CODE &amp; REGS:</small> 162(a); 212; 263(a)(1); 263A(a) and (b); 1.263(a)-1(a), (d), and (f); 1.263(a)-2(d)(1), (e)(1), (f)(1) and (2)(iii); 1.263(a)-3(d), (h)(1), (i)(1), (j)(1), (k)(1), and (l)(1); 1.263(a)-4(b)(1) and (3), (c), (d)(2), (d)(3), (d)(4), (e)(4)(iii), (f)(1) and (8); 1.263-5(a)(1)-(10). The list is a bit long, but you only need to skim the listed regs.
+      </li>
+      <li>
+        Here is a pdf of the <a href="263 Regulations.pdf">263 Regulations</a> in all of their glory. The software used to generate the Code &amp; Regs doesn't permit choosing subparagraphs of the regulations, and given their length, it can't generate a footer with the page numbers and section numbers. You may wish to separate the particular provisions we cover in class and manually insert them in your Code &amp; Regs.
+      </li>
+      <li>
+        <small>ADDITIONAL READINGS:</small>
+        <ul>
+          <li><a href="https://www.taxnotes.com/research/federal/irs-guidance/revenue-rulings/indopco-decision-doesnt-affect-deductibility-of-advertising-costs/dgn2?highlight=92-80">Rev. Rul. 92-80</a></li>
+          <li><a href="https://www.taxnotes.com/research/federal/irs-guidance/revenue-rulings/indopco-does-not-affect-training-costs/dgxk?highlight=96-62">Rev. Rul. 96-62</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- ===== Ch. 5: Compensation ===== -->
+    <h3>Compensation</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 5
+        <small class="pull-right"><a href="slides/FIT_Compensation_2026S.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li>
+        <small>CODE &amp; REGS:</small> 61(a)(1); 83(a), (b), (c), and (h); 102(c); 119(a) and (b); 132(a)-(f), h(2)(A) and h(3), and j(1); 224; 225; 1.61-2(a)(1), (d); 1.83-7(a); all of the 132 regulations cited in the problems on pp. 140-142;
+      </li>
+      <li>
+        <small>ADDITIONAL READINGS:</small>
+        <ul>
+          <li><a href="https://www.taxnotes.com/research/federal/irs-guidance/notices/guidance-provided-tip-overtime-income-deductions-2025/7t9d6">Rev. Proc. 2025-69</a>, which provides guidance on determining and reporting tips and overtimes under &sect;&sect;224 and 225. Skim lightly only as it could be useful to assist any friends or family receiving tips or overtime.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- ===== Ch. 6: Residual Income ===== -->
+    <h3>Residual Income</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 6
+        <small class="pull-right"><a href="slides/FIT_Residual_Income_2026F.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li><small>CODE &amp; REGS:</small> 61; 109; 1019</li>
+      <li>
+        <small>ADDITIONAL READINGS:</small>
+        <ul>
+          <li><a href="https://www.prnewswire.com/news-releases/distinctive-assets-once-again-celebrates-hollywoods-biggest-night-with-its-legendary-everyone-wins-nominee-gift-bags-302700642.html">Oscar freebie bag items</a> For 2026, the Oscar freebie bag is worth 360k</li>
           <li><a href="Sherrif Inmate Food.pdf">Sheriff's use of inmate food fund is taxable income</a></li>
           <li><a href="https://www.taxnotes.com/research/federal/court-documents/court-opinions-and-orders/supreme-court-upholds-mandatory-repatriation-tax-moore/7kd4v">Moore v. US</a> 602 U.S. 572 (2024)</li>
         </ul>
-    </ul> 
+      </li>
+    </ul>
 
-  <h3>Gifts and Bequests</h3>
-
-    <ul class="reading">  
-     <li>
+    <!-- ===== Ch. 7: Gifts and Bequests ===== -->
+    <h3>Gifts and Bequests</h3>
+    <ul class="reading">
+      <li>
         <small>FIT:</small> Ch. 7
-            <small class="pull-right">
-            <a href="slides/FIT_GiftBequest_2026S.pptx" class="link link-slides">Slides</a>  
-        </small>
-      
-      <li>   
-        <small>CODE & REGS:</small>101(a), (c), and (g)(1); 102; 1014(a); 1015(a); 1041(a) and (b) 
-
-      
-       
+        <small class="pull-right"><a href="slides/FIT_GiftBequest_2026S.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li><small>CODE &amp; REGS:</small> 101(a), (c), and (g)(1); 102; 1014(a); 1015(a); 1041(a) and (b)</li>
       <li>
         <small>ADDITIONAL READINGS:</small>
         <ul>
-          <li><a href="Sugar Daddies.pdf"> Tax Issues of Sugar Daddy Relationship</a> </li>
-          
+          <li><a href="Sugar Daddies.pdf">Tax Issues of Sugar Daddy Relationship</a></li>
           <li><a href="propublica.org-How Harlan Crow Cut His Taxes With Clarence Thomas Cruises  ProPublica.pdf">Gift Tax Issues of Justice Thomas</a></li>
-
-          <li>Recent TC gift case<a href="https://www.casemine.com/judgement/us/6098db734653d030f4640555">, Pesante v. CIR</a>, Bench Opinion, (2021)</li> (skim only).
-
+          <li>Recent TC gift case, <a href="https://www.casemine.com/judgement/us/6098db734653d030f4640555">Pesante v. CIR</a>, Bench Opinion, (2021) (skim only).</li>
           <li><a href="PLR 7004070461A.docx">PLR 7004070461A</a> Taxation of receipts from panhandling</li>
-
           <li><a href="https://www.taxnotes.com/research/federal/court-documents/court-opinions-and-orders/earnings-from-street-hustling-is-self-employment-income/1q3l6?highlight=panhandling">Basada v. CIR (TC Mem. 1998-144)</a> What if panhandling is part of other street hustling activities such as pimping and gambling?</li>
-
-          <li> <a href="CRS Estate and Gift.pdf">Overview of G&E Tax</a>.  Notice how few people this affects.  Trusts are discussed on pp. 18-20.  Skim lightly only.      
+          <li><a href="CRS Estate and Gift.pdf">Overview of G&amp;E Tax</a>. Notice how few people this affects. Trusts are discussed on pp. 18-20. Skim lightly only.</li>
         </ul>
-          
-    </ul>   
-  
-  <h3>Income Shifting in the Happy and Fractured Family</h3>
+      </li>
+    </ul>
 
-      <ul class="reading">  
-       <li>
-          <small>FIT:</small> Ch. 8
-              <small class="pull-right">
-              <a href="slides/FIT_IncomeShifting_2026F.pptx" class="link link-slides">Slides</a>  
-          </small>
-        
-        <li>   
-          <small>CODE & REGS:</small>1(a)-(e) (skim rate schedules), 1(g) (skim very lightly); Note: all the trust provisions are skim lightly only, but you should refer to them to answer the problems on pp. 220-221, 671; 673(a); 674(a); 675 (skim lightly); 676(a); 1041; <a href="https://www.taxnotes.com/research/federal/cfr26/301.7701-18">301-7701-8 </a> (definition of husband and wife for federal tax purposes)
-         
-        <li>
-          <small>ADDITIONAL READINGS</small>
-      </ul>     
+    <!-- ===== Ch. 8: Income Shifting ===== -->
+    <h3>Income Shifting in the Happy and Fractured Family</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 8
+        <small class="pull-right"><a href="slides/FIT_IncomeShifting_2026F.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li>
+        <small>CODE &amp; REGS:</small> 1(a)-(e) (skim rate schedules), 1(g) (skim very lightly); Note: all the trust provisions are skim lightly only, but you should refer to them to answer the problems on pp. 220-221, 671; 673(a); 674(a); 675 (skim lightly); 676(a); 1041; <a href="https://www.taxnotes.com/research/federal/cfr26/301.7701-18">301.7701-18</a> (definition of husband and wife for federal tax purposes)
+      </li>
+      <!-- <li><small>ADDITIONAL READINGS:</small> </li> -->
+    </ul>
 
-  <h3>Borrowing and Lending</h3>
+    <!-- ===== Ch. 9: Borrowing and Lending ===== -->
+    <h3>Borrowing and Lending</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 9
+        <small class="pull-right"><a href="slides/FIT_BorrowLend_2026F.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li>
+        <small>CODE &amp; REGS:</small> 61(a)(4); 72(a)(1),(b)(1), (b)(3)(A), (e)(4)(A), (t)(1) and (2); 163(e); 1.263(a)-4(d)(2)(i)(B) and (d)(2)(vi); 1272(a)(1); 1341; 7872 (just subsections covered in class and readings)
+      </li>
+      <li>
+        <small>ADDITIONAL READINGS:</small>
+        <ul>
+          <li><a href="Tunkle v CIR 2026.pdf">Tunkle v. CIR</a> (2026) (recent case involving the former Sec. of the Treasury)</li>
+          <li><a href="https://www.taxnotes.com/research/federal/court-documents/court-opinions-and-orders/tax-court-decision-vacated-hyatt-loyalty-program-case/7vrcn">Hyatt Corp. v CIR</a> (7th Cir. 2026) (claim of right issue)</li>
+        </ul>
+      </li>
+    </ul>
 
-      <ul class="reading">  
-       <li>
-          <small>FIT:</small> Ch. 9
-              <small class="pull-right">
-              <a href="slides/FIT_BorrowLend_2026F.pptx" class="link link-slides">Slides</a>  
-          </small>
-        
-        <li>   
-          <small>CODE & REGS:</small>61(a)(4); 72(a)(1),(b)(1), (b)(3)(A), (e)(4)(A), (t)(1) and (2); 163(e); 1.263(a)-4(d)(2)(i)(B) and (d)(2)(vi); 1272(a)(1); 1341; 7872 (just subsections covered in class and readings)
-         
-        <li>
-          <small>ADDITIONAL READINGS</small>
-            <ul>
-              <li><a href="Tunkle v CIR 2026.pdf">Tunkle v. CIR</a> (2026)</a> (recent case involving the former Sec. of the Treasury)</li>
-              <li><a href="https://www.taxnotes.com/research/federal/court-documents/court-opinions-and-orders/tax-court-decision-vacated-hyatt-loyalty-program-case/7vrcn">Hyatt Corp. v CIR</a> (7th Cir. 2026) (claim of right issue)</li>
-            </ul>
-
-
-      </ul>     
-
+    <!-- ===== Ch. 10: Bad Debt and COD ===== -->
     <h3>Bad-Debt Deductions and Debt-Discharge Income</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 10
+        <small class="pull-right"><a href="slides/FIT_BadDebt_COD_2025S.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li><small>CODE &amp; REGS:</small> 108 (just subsections covered in class), 1017</li>
+      <!-- <li><small>ADDITIONAL READINGS:</small> </li> -->
+    </ul>
 
-      <ul class="reading">  
-       <li>
-          <small>FIT:</small> Ch. 10
-              <small class="pull-right">
-              <a href="slides/FIT_BadDebt_COD_2025S.pptx" class="link link-slides">Slides</a>  
-          </small>
-        
-        <li>   
-          <small>CODE & REGS: 108 (just subsections covered in class), 1017</small>
-         
-        <li>
-          <small>ADDITIONAL READINGS</small>
-      </ul>     
-
-
+    <!-- ===== Ch. 11: Debt and Property ===== -->
     <h3>Debt and Property</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 11
+        <small class="pull-right"><a href="slides/FIT_DebtandProperty_2026S.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li>
+        <small>CODE &amp; REGS:</small> 108(c), (e)(5); 1001(b); 1.1001-2(a)(1) and (2); 1.1001-2(c), Examples 7 (recourse) and 8 (nonrecourse)
+      </li>
+      <!-- <li><small>ADDITIONAL READINGS:</small> </li> -->
+    </ul>
 
-      <ul class="reading">  
-       <li>
-          <small>FIT:</small> Ch. 11
-              <small class="pull-right">
-              <a href="slides/FIT_DebtandProperty_2026S.pptx" class="link link-slides">Slides</a>  
-          </small>
-        
-        <li>   
-          <small>CODE & REGS:</small>108(c), (e)(5); 1001(b); 1.1001-2(a)(1) and (2); 1.1001-2(c), Examples 7 (recourse) and 8 (nonrecourse)
-         
-        <li>
-          <small>ADDITIONAL READINGS</small>
-      </ul> 
+    <!-- ===== Ch. 12: Realization and Recognition ===== -->
+    <h3>Realization and Recognition of &sect;1001 Gain and Loss</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 12
+        <small class="pull-right"><a href="slides/FIT_NonrecognitionGL_2026S.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li>
+        <small>CODE &amp; REGS:</small> 1001(a)-(d); 1031(a)-(d); 1033(a)(1), (2)(A) and (B), 1033(b)(1) and (2), 1033(e); 1223(1) and (2); 1.1031(d)-2, Exs. 1 and 2 (covers the rules for transfers and receipt of encumbered property--a bit tricky)
+      </li>
+      <li>
+        <small>ADDITIONAL READINGS:</small>
+        <ul>
+          <li><a href="https://www.americanbar.org/groups/real_property_trust_estate/resources/real-estate/1031-exchange/">Overview of 1031</a>. ABA overview of 1031 exchanges.</li>
+          <li><a href="https://www.taxnotes.com/tax-notes-today-federal/capital-gains-and-losses/irs-extends-replacement-period-livestock-sold-due-drought/2026/09/16/7wpbc">Replacement Period for Livestock</a></li>
+          <li><a href="https://www.taxnotes.com/tax-notes-today-federal/charitable-giving/couples-casualty-loss-charitable-reservist-deductions-denied/2026/09/24/7wq2t">Williams v. CIR</a> (TC 2026). How not to obtain a casualty loss deduction (skim lightly)</li>
+        </ul>
+      </li>
+    </ul>
 
-    <h3>Realization and Recognition of §1001 Gain and Loss</h3>
-
-      <ul class="reading">  
-       <li>
-          <small>FIT:</small> Ch. 12
-              <small class="pull-right">
-              <a href="slides/FIT_NonrecognitionGL_2026S.pptx" class="link link-slides">Slides</a>  
-          </small>
-        
-        <li>   
-          <small>CODE & REGS:</small>1001(a)-(d); 1031(a)-(d); 1033(a)(1), (2)(A) and (B), 1033(b)(1) and (2), 1033(e); 1223(1) and (2); 1.1031(d)-2, Exs. 1 and 2 (covers the rules for transfers and receipt of encumbered property--a bit tricky)
-         
-        <li>
-          <small>ADDITIONAL READINGS</small>
-            <ul>
-              <li> <a href="https://www.americanbar.org/groups/real_property_trust_estate/resources/real-estate/1031-exchange/?login">Overview of 1031</a>.  ABA overview of 1031 exchanges.</li>
-            
-              <li><a href="https://www.taxnotes.com/tax-notes-today-federal/capital-gains-and-losses/irs-extends-replacement-period-livestock-sold-due-drought/2026/09/16/7wpbc">Replacement Period for Livestock</a></li>
-
-              <li><a href="https://www.taxnotes.com/tax-notes-today-federal/charitable-giving/couples-casualty-loss-charitable-reservist-deductions-denied/2026/09/24/7wq2t">Williams v. CIR</a> (TC 2026). How not to obtain a casualty loss deduction (skim lightly) </li>
-
-
-            </ul>
-      </ul> 
-
+    <!-- ===== Ch. 13: Depreciation ===== -->
     <h3>Depreciation and Business Interest</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 13
+        <small class="pull-right"><a href="slides/FIT_DepreciationBusInt_2026F.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li>
+        <small>CODE &amp; REGS:</small> 163(j) (skim only); 167(a) and (c); 168(a)-(e); 179(a), (b)(1)-(3), (d)(1), (e); 280F; 1016(a)(2)
+      </li>
+      <li>
+        <small>ADDITIONAL READINGS:</small>
+        <ul>
+          <li>Note: some of the limits under 179, 280F have been modified since the book was published. Pls check the spreadsheet for the new numbers.</li>
+          <li><a href="https://www.irs.gov/pub/irs-drop/n-26-11.pdf">Notice 2026-11</a> (interim guidance on 168(k)) The lightest of skim</li>
+        </ul>
+      </li>
+    </ul>
 
-      <ul class="reading">  
-       <li>
-          <small>FIT:</small> Ch. 13
-              <small class="pull-right">
-              <a href="slides/FIT_DepreciationBusInt_2026F.pptx" class="link link-slides">Slides</a>  
-          </small>
-        
-        <li>   
-          <small>CODE & REGS: 163(j) (skim only); 167(a) and (c); 168(a)-(e); 179(a), (b)(1)-(3), (d)(1), (e); 280F; 1016(a)(2)</small>
-         
-        <li>
-          <small>ADDITIONAL READINGS</small>
-            <ul>
-              <li> Note: some of the limits under 179, 280F have been modified since the book was published. Pls check the spreadsheet for the new numbers.</li>
-              <li> <a href="https://www.irs.gov/pub/irs-drop/n-26-11.pdf">Notice 2026-11</a> (interim guidance on 168(k)) The lightest of skim</li> 
-            </ul>
-      </ul> 
-
-
+    <!-- ===== Ch. 14: Capital Gains and Losses ===== -->
     <h3>Capital Gains and Losses</h3>
-
-      <ul class="reading">  
-       <li>
-          <small>FIT:</small> Ch. 14, skip 408-409 (1212(b) carryover rule)
-              <small class="pull-right">
-              <a href="slides/FIT_CapitalGainsLosses_2026S.pptx" class="link link-slides">Slides</a>  
-          </small>
-        
-        <li>   
-          <small>CODE & REGS: 1(h); 1221; 1231, 1245, 1250; and 1411</small>
-         
-        <li>
-          <small>ADDITIONAL READINGS</small>
-            <ul>
-              <li> <a href="History of Adjusting Basis for Inflation Mar 2026.pdf">Brief history of adjusting basis for inflation</a> (Mar. 2026)</li>
-              <li> <a href="Real Estate Recapture Mar 2026.pdf"> Discussion of some of the tax issues of real estate investing, including depreciation and capital gains.</a> (Mar. 2026)</li>
-            </ul>
-      </ul> 
-
-   
-
-  <h3>Human Capital</h3>
-
-       <ul class="reading">  
-       <li>
-          <small>FIT:</small> Ch. 16
-              <small class="pull-right">
-              <a href="slides/FIT_HumanCapital_2026F.pptx" class="link link-slides">Slides</a>  
-          </small>
-        
-        <li>   
-          <small>CODE & REGS: 117; 127; 25A; 104(a)(2); 221; 1.162-5(a)</small>
-         
-        <li>
-          <small>ADDITIONAL READINGS</small>
-            <ul>
-              <li><a href="https://www.taxnotes.com/taxpractice/individual-income-taxation/settlement-proceeds-taxable-lack-claimed-injury-or-sickness/2025/10/06/7t29w">Fortune-Paladino v. CIR</a>T.C. Memo. 2025-101 (2025) (taxation of settlement proceeds for emotional distress)</li>
-              <li><a href="https://www.irs.gov/publications/p970.html">IRS Pub. 970: Tax Benefits for Education (2025)</a></li>
-              <li><a href="Students Loans NYT Apr 2026.pdf">NYT Article (Apr 2026) on the non-payment of students loans and the limits of qualified scholarships for one Princeton student </a> </li>
-            </ul>
-      </ul> 
-
-  <h3>Homes, Health, and Charity</h3>
-
-      <ul class="reading">  
+    <ul class="reading">
       <li>
-         <small>FIT:</small> Ch. 17: skip 522-524
-             <small class="pull-right">
-             <a href="slides/FIT_HomeHealthCharity_2026F.pptx" class="link link-slides">Slides</a>  
-         </small>
-       
-       <li>   
-         <small>CODE & REGS: 36B (skim); 105(b) and 106; 121; 125(d), (f) and (i); 163(h)(3); 165(c)(3) and (h); 170(a), (b)(1)(A)(ii), (b)(1)(B), (b)(1)(C)(i), (b)(1)(I), (e)(1)-(3), 170(p); 213; 223 (skim); 1.170A-1(c)(1)</small>
-        
-       <li>
-         <small>ADDITIONAL READINGS</small>
-          <ul>
-            <li><a href="https://www.irs.gov/pub/irs-wd/202505002.pdf">PLR 202505002</a> (deductibility of of IVF procedures, gestational surrogacy)</li>
-            <li><a href="HSAs Tax-Friendly Adventure Vehicle.pdf"> HSAs as investment accounts</a>.  This is probably not what Congress intended.</li>
-            <li><a href="How to Get All the Tax Benefits From Your Health-Savings Account - WSJ.pdf">Benefits of HSAs</a> (WSJ 2026)</li>
-            <li><a href="https://www.taxnotes.com/tax-notes-today-federal/charitable-giving/failure-get-qualified-appraisals-excused-deduction-dispute/2025/04/10/7ryq7">WT Art Part. v. CIR, TC Memo 2025-30</a>  (skim very lightly; illustrates the administrative challenges and hurdles of large art donations). </li>
-            <li><a href="Murphy Hollow TC 2026.pdf">Murphy Hollow v. CIR</a> (TC Mem. 2026) (just skip the first two pages)</li>
-          </ul>
-     </ul> 
-
-  <h3>Tax Shelters</h3>
-
-     <ul class="reading">  
+        <small>FIT:</small> Ch. 14, skip 408-409 (1212(b) carryover rule)
+        <small class="pull-right"><a href="slides/FIT_CapitalGainsLosses_2026S.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li><small>CODE &amp; REGS:</small> 1(h); 1221; 1231, 1245, 1250; and 1411</li>
       <li>
-         <small>FIT:</small> Ch. 15: pp. 444-451, 459-463 (skim lightly only); 463-473
-             <small class="pull-right">
-             <a href="slides/FIT_TaxShelters_2026S.pptx" class="link link-slides">Slides</a>  
-         </small>
-       
-       <li>   
-         <small>CODE & REGS:  163(d); 461(l); 465(a)(1), (b)(5), (b)(6); 469(a)(1)(A), (a)(2), (b), (c)(7), (e)(1), (g), (i); </small>
-        
-       <li>
-         <small>ADDITIONAL READINGS</small>
-            <li>ETFs have recently become a vehicle for massive tax sheltering transactions.  The tax gambit is discussed in this BB article <a href="Capital Gains Vanish Into Black Holes.pdf"> Capital Gains vanish into Black Holes</a>.  The IRS, employing sub. v. form arguments, recently responded to these transactions in <a href="https://www.irs.gov/pub/irs-drop/rr-26-20.pdf">Rev. Rul. 2026-20</a> (skim only).  Here's a detailed discussion of the 351 transactions and the IRS response: <a href="351 TNotes Sheppard 2026.pdf">No Substance in 351 Conversions</a>. Here are some <a href="slides/ETFs In-Kind Redemptions Swap Funds.pptx"> slides </a> that we'll use to cover this material. 
-     </ul>    
+        <small>ADDITIONAL READINGS:</small>
+        <ul>
+          <li><a href="History of Adjusting Basis for Inflation Mar 2026.pdf">Brief history of adjusting basis for inflation</a> (Mar. 2026)</li>
+          <li><a href="Real Estate Recapture Mar 2026.pdf">Discussion of some of the tax issues of real estate investing, including depreciation and capital gains.</a> (Mar. 2026)</li>
+        </ul>
+      </li>
+    </ul>
 
- <h3>Retirement and Savings Incentives</h3>
-
-     <ul class="reading">  
+    <!-- ===== Ch. 16: Human Capital ===== -->
+    <h3>Human Capital</h3>
+    <ul class="reading">
       <li>
-         <small>FIT:</small> None
-             <small class="pull-right">
-             <a href="slides/FIT_RetirementPlans_2026S.pptx" class="link link-slides">Slides</a>  
-         </small>
-       
-       <li>   
-         <small>CODE & REGS:  530A [More coming] </small>
-        
-       <li>
-         <small>ADDITIONAL READINGS</small>
-          <ul>
-            <li><a href="https://www.plansponsor.com/maximum-benefit-and-contributions-limits-table-2027/?utm_source=newsletter&utm_medium=email&utm_campaign=Newsdash">2027 Contribution Limits</a> Skim only</li>
-            <li><a href="2026_Retirement_Accounts_19Apr26.xlsx">Retirement Accounts Spreadsheet</a> </li>
-            <li><a href="Traditional or Roth WSJ.pdf">Roth or Regular IRA</a> (WSJ 2026)</li> 
-            <li><a href="https://www.irs.gov/publications/p590a">IRS Publication on (all types of) IRAs</a> </li>
-            <li><a href="https://www.napa-net.org/news/2024/5/court-backs-401k-beneficiary-designation-estate-claim/">P&G v. Rolison (2026)</a>Be careful with your beneficiary designations</li>
-            <li>Trump Accounts: <a href="Trumps Account Gertsner.pdf">Driver behind Trump Accounts</a>; <a href="Trump Accounts Tax-Free Nest Eggs WSJ.pdf">Potential LT Benefits of Trump Accounts</a> (WSJ 2026); <a href="Trump Account Baldrige 20226.pdf">Trump Account vs Taxable Account</a>
-            
-            </li>
-          
-          
-          </ul>
-     </ul>   
+        <small>FIT:</small> Ch. 16
+        <small class="pull-right"><a href="slides/FIT_HumanCapital_2026F.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li><small>CODE &amp; REGS:</small> 117; 127; 25A; 104(a)(2); 221; 1.162-5(a)</li>
+      <li>
+        <small>ADDITIONAL READINGS:</small>
+        <ul>
+          <li><a href="https://www.taxnotes.com/taxpractice/individual-income-taxation/settlement-proceeds-taxable-lack-claimed-injury-or-sickness/2025/10/06/7t29w">Fortune-Paladino v. CIR</a> T.C. Memo. 2025-101 (2025) (taxation of settlement proceeds for emotional distress)</li>
+          <li><a href="https://www.irs.gov/publications/p970.html">IRS Pub. 970: Tax Benefits for Education (2025)</a></li>
+          <li><a href="Students Loans NYT Apr 2026.pdf">NYT Article (Apr 2026) on the non-payment of students loans and the limits of qualified scholarships for one Princeton student</a></li>
+        </ul>
+      </li>
+    </ul>
 
+    <!-- ===== Ch. 17: Homes, Health, and Charity ===== -->
+    <h3>Homes, Health, and Charity</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 17: skip 522-524
+        <small class="pull-right"><a href="slides/FIT_HomeHealthCharity_2026F.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li>
+        <small>CODE &amp; REGS:</small> 36B (skim); 105(b) and 106; 121; 125(d), (f) and (i); 163(h)(3); 165(c)(3) and (h); 170(a), (b)(1)(A)(ii), (b)(1)(B), (b)(1)(C)(i), (b)(1)(I), (e)(1)-(3), 170(p); 213; 223 (skim); 1.170A-1(c)(1)
+      </li>
+      <li>
+        <small>ADDITIONAL READINGS:</small>
+        <ul>
+          <li><a href="https://www.irs.gov/pub/irs-wd/202505002.pdf">PLR 202505002</a> (deductibility of IVF procedures, gestational surrogacy)</li>
+          <li><a href="HSAs Tax-Friendly Adventure Vehicle.pdf">HSAs as investment accounts</a>. This is probably not what Congress intended.</li>
+          <li><a href="How to Get All the Tax Benefits From Your Health-Savings Account - WSJ.pdf">Benefits of HSAs</a> (WSJ 2026)</li>
+          <li><a href="https://www.taxnotes.com/tax-notes-today-federal/charitable-giving/failure-get-qualified-appraisals-excused-deduction-dispute/2025/04/10/7ryq7">WT Art Part. v. CIR, TC Memo 2025-30</a> (skim very lightly; illustrates the administrative challenges and hurdles of large art donations).</li>
+          <li><a href="Murphy Hollow TC 2026.pdf">Murphy Hollow v. CIR</a> (TC Mem. 2026) (just skip the first two pages)</li>
+        </ul>
+      </li>
+    </ul>
 
+    <!-- ===== Ch. 15: Tax Shelters ===== -->
+    <h3>Tax Shelters</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> Ch. 15: pp. 444-451, 459-463 (skim lightly only); 463-473
+        <small class="pull-right"><a href="slides/FIT_TaxShelters_2026S.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li>
+        <small>CODE &amp; REGS:</small> 163(d); 461(l); 465(a)(1), (b)(5), (b)(6); 469(a)(1)(A), (a)(2), (b), (c)(7), (e)(1), (g), (i);
+      </li>
+      <li>
+        <small>ADDITIONAL READINGS:</small>
+        <ul>
+          <li>ETFs have recently become a vehicle for massive tax sheltering transactions. The tax gambit is discussed in this BB article <a href="Capital Gains Vanish Into Black Holes.pdf">Capital Gains vanish into Black Holes</a>. The IRS, employing sub. v. form arguments, recently responded to these transactions in <a href="https://www.irs.gov/pub/irs-drop/rr-26-20.pdf">Rev. Rul. 2026-20</a> (skim only). Here's a detailed discussion of the 351 transactions and the IRS response: <a href="351 TNotes Sheppard 2026.pdf">No Substance in 351 Conversions</a>. Here are some <a href="slides/ETFs In-Kind Redemptions Swap Funds.pptx">slides</a> that we'll use to cover this material.</li>
+        </ul>
+      </li>
+    </ul>
 
+    <!-- ===== Retirement ===== -->
+    <h3>Retirement and Savings Incentives</h3>
+    <ul class="reading">
+      <li>
+        <small>FIT:</small> None
+        <small class="pull-right"><a href="slides/FIT_RetirementPlans_2026S.pptx" class="link link-slides">Slides</a></small>
+      </li>
+      <li><small>CODE &amp; REGS:</small> 530A [More coming]</li>
+      <li>
+        <small>ADDITIONAL READINGS:</small>
+        <ul>
+          <li><a href="https://www.plansponsor.com/maximum-benefit-and-contributions-limits-table-2027/?utm_source=newsletter&utm_medium=email&utm_campaign=Newsdash">2027 Contribution Limits</a> Skim only</li>
+          <li><a href="2026_Retirement_Accounts_19Apr26.xlsx">Retirement Accounts Spreadsheet</a></li>
+          <li><a href="Traditional or Roth WSJ.pdf">Roth or Regular IRA</a> (WSJ 2026)</li>
+          <li><a href="https://www.irs.gov/publications/p590a">IRS Publication on (all types of) IRAs</a></li>
+          <li><a href="https://www.napa-net.org/news/2024/5/court-backs-401k-beneficiary-designation-estate-claim/">P&amp;G v. Rolison (2026)</a> Be careful with your beneficiary designations</li>
+          <li>Trump Accounts: <a href="Trumps Account Gertsner.pdf">Driver behind Trump Accounts</a>; <a href="Trump Accounts Tax-Free Nest Eggs WSJ.pdf">Potential LT Benefits of Trump Accounts</a> (WSJ 2026); <a href="Trump Account Baldrige 20226.pdf">Trump Account vs Taxable Account</a></li>
+        </ul>
+      </li>
+    </ul>
 
-
-
-
-
+  </main><!-- /.article -->
+</div><!-- /.content -->
 
 <script>
+  // Collapsible reading lists: click a section heading to show/hide its list.
   document.addEventListener('DOMContentLoaded', function () {
-      var headings = document.querySelectorAll('h3');
-      var readingLists = document.querySelectorAll('.reading');
-      var toggleAllButton = document.getElementById('toggle-all');
+    var toggleAllButton = document.getElementById('toggle-all');
+    var lists = [];
 
-      var allExpanded = false;  // Track whether all sections are currently expanded or collapsed
+    function allOpen() {
+      return lists.every(function (list) { return list.classList.contains('open'); });
+    }
 
-      headings.forEach(function (h3) {
-          h3.addEventListener('click', function () {
-              var readingList = this.nextElementSibling;
-              readingList.style.display = readingList.style.display === 'none' ? 'block' : 'none';
-          });
+    function updateButton() {
+      toggleAllButton.textContent = allOpen() ? 'Collapse All' : 'Expand All';
+      lists.forEach(function (list) {
+        list.previousElementSibling.setAttribute('aria-expanded', list.classList.contains('open'));
       });
+    }
 
-      toggleAllButton.addEventListener('click', function () {
-          allExpanded = !allExpanded;  // Flip the current state
+    document.querySelectorAll('.article h3').forEach(function (heading) {
+      var list = heading.nextElementSibling;
+      if (!list || !list.classList.contains('reading')) return;
 
-          readingLists.forEach(function (list) {
-              list.style.display = allExpanded ? 'block' : 'none';
-          });
+      lists.push(list);
+      heading.classList.add('toggle');
+      heading.setAttribute('tabindex', '0');
+      heading.setAttribute('role', 'button');
+      heading.setAttribute('aria-expanded', 'false');
 
-          toggleAllButton.textContent = allExpanded ? 'Collapse All' : 'Expand All';
+      function toggle() {
+        list.classList.toggle('open');
+        updateButton();
+      }
+      heading.addEventListener('click', toggle);
+      heading.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
       });
+    });
+
+    toggleAllButton.addEventListener('click', function () {
+      var expand = !allOpen();
+      lists.forEach(function (list) { list.classList.toggle('open', expand); });
+      updateButton();
+    });
   });
 </script>
-
-
-
 </body>
 </html>
-
-	          
-      
